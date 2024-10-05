@@ -1,6 +1,7 @@
 package application;
 
 import services.BraziInterestService;
+import services.InterestService;
 import services.UsaInterestService;
 
 import java.util.Locale;
@@ -17,7 +18,7 @@ public class Program {
         System.out.print("Months: ");
         int months = sc.nextInt();
 
-        UsaInterestService is = new UsaInterestService(1.0);
+        InterestService is = new UsaInterestService(1.0);
         double payment = is.payment(amount, months);
 
         System.out.println("Payment after " + months + " months: ");
