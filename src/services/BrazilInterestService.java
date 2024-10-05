@@ -1,11 +1,9 @@
 package services;
 
-import java.security.InvalidParameterException;
-
-public class UsaInterestService implements InterestService{
+public class BrazilInterestService implements InterestService{
     private double interestRate;
 
-    public UsaInterestService(double interestRate) {
+    public BrazilInterestService(double interestRate) {
         this.interestRate = interestRate;
     }
 

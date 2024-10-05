@@ -1,6 +1,6 @@
 package application;
 
-import services.BraziInterestService;
+import services.BrazilInterestService;
 import services.InterestService;
 import services.UsaInterestService;
 
@@ -18,7 +18,7 @@ public class Program {
         System.out.print("Months: ");
         int months = sc.nextInt();
 
-        InterestService is = new UsaInterestService(1.0);
+        InterestService is = new BrazilInterestService(2.0);
         double payment = is.payment(amount, months);
 
         System.out.println("Payment after " + months + " months: ");
